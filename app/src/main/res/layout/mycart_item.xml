@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="15dp"
+    android:elevation="70dp"
+    app:cardCornerRadius="15dp"
+    android:background="#D7DF8D"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#D7DF8D">
+    <ImageView
+        android:id="@+id/cartImg"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="25dp"
+        android:src="@drawable/fries" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/name_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="2dp">
+    <Button
+        android:id="@+id/decrease"
+        android:layout_width="55dp"
+        android:background="@drawable/btn_shape"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_height="30dp"
+        android:text="-" />
+
+    <EditText
+        android:id="@+id/quant_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:text="0"
+        android:inputType="number"
+
+        android:textStyle="bold"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/increase"
+        android:layout_width="55dp"
+        android:background="@drawable/btn_shape"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_height="30dp"
+        android:text="+" />
+</LinearLayout>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+            <TextView
+                android:id="@+id/cart_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="@string/dish_price"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                />
+    <!-- <TextView
+        android:id="@+id/total_cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/dish_price"
+        android:layout_marginStart="40dp"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        />-->
+</androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+ android:layout_height="match_parent"
+     android:layout_width="match_parent">
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.profile.ProfileFragment"
+    >
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleRegister"
+        android:gravity="center"
+        android:text="@string/menu_profile"
+        android:layout_margin="17dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+
+        />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:text="@string/username"
+
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="40dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user"
+
+        android:text="@string/username"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:text="@string/gender"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="75dp"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/genderr"
+
+        android:text="@string/gender"
+        android:layout_margin="3dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="40dp"
+
+            android:text="@string/birthdate"
+
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/birth"
+
+        android:text="@string/birthdate"
+        android:layout_margin="8dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+
+        />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:hint="Enter your Username"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColorHint="@color/green"
+        android:inputType="text"
+        android:padding="20dp"
+        android:background="@drawable/search_shape"
+        android:drawablePadding="20sp"
+        android:drawableStart="@drawable/name"
+
+        />
+
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/search_shape"
+        android:drawableStart="@drawable/gender"
+        android:inputType="text"
+        android:drawablePadding="20dp"
+        android:hint="Enter Your Gender"
+        android:padding="20dp"
+        android:textColorHint="@color/green"
+        />
+
+    <EditText
+        android:id="@+id/birthdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/search_shape"
+        android:drawableStart="@drawable/birthdate"
+        android:inputType="text"
+        android:drawablePadding="20dp"
+        android:hint="Enter your Birthdate"
+        android:padding="20dp"
+        android:textColorHint="@color/green"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/btn_shape"
+        android:textColor="@color/white"
+        android:id="@+id/btnAdd"
+        android:text="add"
+        android:textSize="20sp"
+        />
+
+   <!-- <androidx.cardview.widget.CardView
+        android:id="@+id/card_read"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="257dp"
+            android:background="@drawable/register_bk"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="17dp"
+                android:drawableLeft="@drawable/eye"
+                android:gravity="center"
+                android:text="Your can see your Info Here!"
+                android:textColor="@color/green"
+                android:textSize="28sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/user_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="3dp"
+                android:textSize="21sp"
+                tools:hint="your name" />
+
+            <TextView
+                android:id="@+id/gender_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="3dp"
+                android:textSize="21sp"
+                tools:hint="your gender" />
+
+            <TextView
+                android:id="@+id/date_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="3dp"
+                android:textSize="21sp"
+                tools:hint="your birthdate" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView> -->
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

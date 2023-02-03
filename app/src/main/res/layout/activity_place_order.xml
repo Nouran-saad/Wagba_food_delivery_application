@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7DF8D"
+    android:orientation="vertical"
+    tools:context=".PlaceOrder">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/onGoing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ongoing"
+                    android:layout_marginStart="10dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/orange"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/alarm"/>
+
+
+            <!--    <TextView
+                    android:id="@+id/Estimated_time_val"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/estimated_time_val"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    />-->
+
+            </LinearLayout>
+        </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/white"
+        android:id="@+id/card"
+        android:layout_margin="20dp"
+
+        app:cardCornerRadius="70dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+  <TextView
+
+      android:id="@+id/confirm"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="WaitingToConfirm"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="20dp"
+      android:layout_gravity="center"
+      android:textSize="20sp"
+                />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/orderCode1"
+                android:layout_marginStart="4dp"
+
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                app:layout_constraintStart_toStartOf="parent"/>
+           <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/orderCode2"
+                android:layout_marginStart="4dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/orange"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </LinearLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_track"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+        <ImageView
+            android:id="@+id/point1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_circle_24"
+          app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toTopOf="@id/txt1"
+            />
+ <!--   <ImageView
+        android:id="@+id/point2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_baseline_circle_24"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@id/point3"
+        app:layout_constraintStart_toStartOf="@id/point1"
+        app:layout_constraintTop_toBottomOf="@id/point1"
+        />-->
+    <ImageView
+        android:id="@+id/point3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_baseline_circle_24"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@id/point4"
+        app:tint="#cccccc"
+        app:layout_constraintStart_toStartOf="@id/point1"
+        app:layout_constraintTop_toBottomOf="@id/point1"
+        />
+    <ImageView
+        android:id="@+id/point4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_baseline_circle_24"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:tint="#cccccc"
+        app:layout_constraintStart_toStartOf="@id/point3"
+        app:layout_constraintTop_toBottomOf="@id/point3"
+        />
+    <!--<ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:progress="100"
+        android:rotation="90"
+        android:progressTint="#cccccc"
+        app:layout_constraintBottom_toTopOf="@id/point2"
+        app:layout_constraintEnd_toEndOf="@id/point1"
+        app:layout_constraintStart_toStartOf="@id/point1"
+        app:layout_constraintTop_toBottomOf="@id/point1"
+        />-->
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:progress="100"
+        android:rotation="90"
+        android:progressTint="#cccccc"
+        android:id="@+id/progress1"
+        app:layout_constraintBottom_toTopOf="@id/point1"
+        app:layout_constraintEnd_toEndOf="@id/point3"
+        app:layout_constraintStart_toStartOf="@id/point3"
+        app:layout_constraintTop_toBottomOf="@id/point3"
+        />
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="60dp"
+        android:id="@+id/progress2"
+        android:layout_height="3dp"
+        android:progress="100"
+        android:rotation="90"
+        android:progressTint="#cccccc"
+        app:layout_constraintBottom_toTopOf="@id/point4"
+        app:layout_constraintEnd_toEndOf="@id/point3"
+        app:layout_constraintStart_toStartOf="@id/point3"
+        app:layout_constraintTop_toBottomOf="@id/point3"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt1"
+        android:text="@string/Ordered"
+        app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/kitchen"
+        android:textStyle="bold"
+        />
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delivery_agent"
+        app:layout_constraintTop_toTopOf="@+id/point2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/orange"
+        android:textSize="17sp"
+        android:drawableLeft="@drawable/agent"
+        android:textStyle="bold"
+        />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt2"
+        android:text="@string/delivery_location"
+        app:layout_constraintTop_toTopOf="@+id/point3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/scooter"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt3"
+        android:text="@string/delivery_deliverd"
+        app:layout_constraintTop_toTopOf="@+id/point4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/chickenbox"
+        android:textStyle="bold"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+<Button
+
+
+    android:text="@string/back_to_home"
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:background="@drawable/btn_shape"
+    android:textSize="20sp"
+    android:textColor="@color/white"
+    android:onClick="goToHome"
+    android:layout_gravity="center_horizontal"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
