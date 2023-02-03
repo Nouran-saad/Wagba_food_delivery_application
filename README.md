@@ -1,4 +1,4 @@
-# Wagba_food_delivery_application
+## Wagba_food_delivery_application
 Project Requirments:
 - login page with sign up option using firebase authenticate. There should be a test account
 credentials with login information submitted with the app for testing
@@ -13,3 +13,5 @@ availability.
 - Payment and order tracking page.
 - Web application for restaurants to confirm orders and update tracking data. Order must be
 confirmed before 10:30 for noon delivery and before 1:30 for 3:00 pm delivery.
+### Demo Of The App
+[![Watch the video](https://img.youtube.com/vi/VFTi4G_GVUQ/maxresdefault.jpg)](https://youtu.be/VFTi4G_GVUQ)
